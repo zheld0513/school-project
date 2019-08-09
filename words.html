@@ -1,61 +1,21 @@
-<!--
-
-THIS FILE HAS ABOUT 3,300 WORDS TO TRANSLATE
-
-TRANSLATION NOTES:
-
-When translating this thing, only edit the stuff that's BETWEEN the <tags>, like so:
-
-    <p id="still_english">hello</p>
-    =>
-    <p id="still_english">bonjour</p>
-
-Also, DON'T change anything between the [square brackets], like so:
-
-    Number #[N]
-    =>
-    Numero #[N]
-
-Exception to the "don't change tags" rule:
-Feel free to move around the italics & bold tags, so that the emphasis
-on the right phrases/words still makes sense!
-
-    <i>italics</i>
-    <b>bold</b>
-
-Also, some HTML weirdness you might want to know:
-
-    &amp; is an ampersand "&" sign
-    &#8226; is a dot
-    &rarr; is a rightward-facing arrow
-    &lt; is a "<" sign
-
-ALSO! I'd love for you to credit yourself as a translator!
-You can add your own name in the <p id="subtitle"> section
-
-Thanks again!
-~ Nicky Case
-
--->
-
 <!-- - - - - - - - - - - - - - - - - -->
 <!-- - - - - - META STUFF - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="meta_title">
-The Evolution of Trust
+간단한(?) 자료
 </p>
 <p id="meta_desc">
-an interactive guide to the game theory of why &amp; how we trust each other
+탐구대회를 위한 자료
 </p>
 <p id="meta_loading">
-loading...
+로딩중...
 </p>
 <p id="meta_on">
-ON
+켜짐
 </p>
 <p id="meta_off">
-OFF
+꺼짐
 </p>
 
 
@@ -64,29 +24,25 @@ OFF
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="title">
-<span style="font-size:0.75em">THE</span><br>
-EVOLUTION<br>
-<span style="font-size:0.75em">OF TRUST</span>
+<span style="font-size:0.75em">탐구 대회 자료</span><br>
+신뢰의 진화<br>
+<span style="font-size:0.15em">※시작 버튼이 고장나서 사이트 맨 아래 동그라미에서 '0.소개' 를 눌러주세요...
 </p>
 <p id="subtitle">
 
-playing time: 30 min &#8226; by nicky case, july 2017
+플레이 시간: 30 분 &#8226; by 진용석, 2019년 7월 30일
 
-<!-- TRANSLATION NOTE: UNCOMMENT THE FOLLOWING & ADD YOUR OWN NAME! -->
-<!--
 <br>
-translated by YOUR NAME HERE
+팀원 : 서정인, 오정호, 진용석
 &#8226;
-<a href="http://ncase.me/trust/">original English version</a>
--->
 
 </p>
 
 <p id="loading">
-loading...
+로딩중...
 </p>
 <p id="loading_done">
-PLAY &rarr;
+시작 &rarr;
 </p>
 
 <!-- - - - - - - - - - - - - - - - - -->
@@ -94,29 +50,19 @@ PLAY &rarr;
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="intro">
-During World War I, peace broke out.
-<br><br>
-
-It was Christmas 1914 on the Western Front.<br>
-Despite strict orders <i>not</i> to chillax with the enemy, British<br>
-and German soldiers left their trenches, crossed No Man's Land,<br>
-and gathered to bury their dead, exchange gifts, and play games.
-<br><br>
-
-Meanwhile: it's 2017, the West has been at peace for decades, and<br>
-wow, we <i>suck</i> at trust. Surveys show that, over the past forty years,
-fewer and fewer people say they trust each other. So here's our puzzle:
-<br><br>
-
-<b>Why, even in peacetime, do friends become enemies?<br>
-And why, even in wartime, do enemies become friends?</b>
-<br><br>
-
-I think <b>game theory</b> can help explain our epidemic of distrust –<br>
-and how we can fix it! So, to understand all this...
+이 프로젝트를 시작하게된 계기는 신뢰에 대한 이미 진행된 실험이 사회에서 적용되는 것은 거의 확실하지만 아직 더 넓은 사회를 겪지 않은 우리에게
+이 실험이 적용되는 것을 확인해보고 싶었기 때문이다.
+<br>
+<span style="font-size:0.75em">실험 방법</span>
+<br>
+1.아두이노로 만든 뒤에서 볼 '기계'를 만들어 전략을 어러개 만들어본다.
+<br>
+2.전략을 어느정도 만들었으면 프로그램화 시킨다
+<br>
+3.코딩한 프로그램들 끼리 단일 게임과 반복 게임을 시켜본다.
 </p>
 <p id="intro_button">
-...let's play a game. &rarr;
+...게임을 시작하지 &rarr;
 </p>
 
 <!-- - - - - - - - - - - - - - - - - -->
@@ -124,85 +70,85 @@ and how we can fix it! So, to understand all this...
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="label_you_cooperate">
-you<br>cooperate
+당신<br>협력
 </p>
 
 <p id="label_you_cheat">
-you<br>cheat
+당신<br>배반
 </p>
 
 <p id="label_they_cooperate">
-they<br>cooperate
+상대<br>협력
 </p>
 
 <p id="label_they_cheat">
-they<br>cheat
+상대<br>배반
 </p>
 
 <p id="label_you">
-you<br>↙
+당신<br>↙
 </p>
 <p id="label_them">
-other player<br>↘
+상대<br>↘
 </p>
 
 <p id="oneoff_0_top">
 
-<b>THE GAME OF TRUST</b>
+<b>신뢰 게임</b>
 <br>
-You have one choice.
-In front of you is a machine: if you put a coin in the machine,
-the <i>other player</i> gets three coins – and vice versa.
-You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin).
+앞에 보이는 것은 기계(앞에서 말한 그 아두이노로 만든 기계)입니다. 
+이 기계에 동전을 넣으면 상대는 동전 3개를 얻습니다. 
+마찬가지로 상대가 동전을 넣으면 당신이 동전 3개를 얻습니다. 
+두 사람은 각자 <b>협력</b>(동전을 넣음)을 선택하거나 <b>배신</b>을 선택할 수 있습니다.
 </p>
 
 <p id="oneoff_0_btm">
-<b>Let's say the other player cheats, and doesn't put in a coin.</b><br>
-What should you do?
+<b>상대 플레이어가 배신을 해서 동전을 넣지 않았다고 가정합시다.</b><br>
+이때 여러분은 당신은 어떻게 하시겠습니까?
 </p>
 
 <p id="oneoff_1_cheated">
-Exactly! Why let that moocher mooch off of you?
+그렇죠! 남을 위해 좋은 일을 할 필요는 없죠!
 </p>
 
 <p id="oneoff_1_cooperated">
-Alas, turning the other cheek just gets you slapped!
+눈 뜨고 코 베이셨군요!
 </p>
 
 <p id="oneoff_1_top">
-If you cooperate &amp; they cheat, you lose a coin while they gain three. (score: -1 vs +3)
-However, if you both cheat, neither of you gain or lose anything. (score: 0 vs 0)
-<b>Therefore: you should CHEAT.</b>
+당신이 협력, 상대는 배신을 선택했다면 당신은 동전 1개를 잃고 상대는 3개를 얻으므로 점수는 -1 대 3 입니다. 
+하지만 둘다 배신을 선택한 경우에는 아무도 동전을 얻거나 잃지 않으므로 점수는 0 대 0 입니다. 
+<b>그러므로, 당신은 '배신'을 해야합니다.</b>
 </p>
 
 <p id="oneoff_1_btm">
-<b>But let's say the other player cooperates, and puts in a coin.</b><br>
-What should you do now?
+<b>그런데 이제는 상대가 협력한다고 합니다.</b><br>
+당신은 어떻게 하시겠습니까?
 </p>
 
 <p id="oneoff_2_cheated">
-Wow, that's mean... and also the correct answer!
+맘씨가 안좋으신 분이군요! 그렇지만 정답입니다!
 </p>
 
 <p id="oneoff_2_cooperated">
-Sure, seems like the right thing to do... <b>OR IS IT??</b>
+옳은 일을 하셨네요,그런데 잠깐. <b>정말 그럴까요??</b>
 </p>
 
 <p id="oneoff_2_top">
-Because if you both cooperate, you both give up a coin to gain three. (score: +2 vs +2)
-But if you cheat &amp; they cooperate, you gain three coins at their cost of one. (score: +3 vs -1)
-<b>Therefore: you "should" still CHEAT.</b>
+둘다 협력했다면, 각자 동전 하나를 포기하고 세 개를 얻는거죠. 
+(점수: 2 대 2) 하지만 당신이 배신을 하고 상대는 협력을 했다면 당신은 동전 세 개를 얻고 상대는 하나를 잃습니다. (점수: 3 대 -1)
+<b>그래서 결론은! 우리는 배신을 해야합니다.</b>
 </p>
 
 <p id="oneoff_2_btm">
-And <i>that's</i> our dilemma.
-Trust is nice, but it can let others take advantage of you -- or shoot you as you come unarmed out of a trench.
-Sometimes, distrust <i>is</i> rational!
-But now, what happens if we play this game...
+그리고 이게 바로 우리의 딜레마입니다.
+신뢰 좋죠. 하지만 다른 사람에게 이용당할 수도 있습니다.
+생각해보면 <i>불신이</i> 합리적인 것
+같기도 합니다. 하지만, 우리가 만약 이 게임을...
 </p>
 
 <p id="oneoff_button_next">
-...more than once? &rarr;
+...계속 ? &rarr;
 </p>
 
 <!-- - - - - - - - - - - - - - - - - -->
@@ -210,27 +156,27 @@ But now, what happens if we play this game...
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="iterated_intro_top">
-<b>Now, let's play for real.</b>
-You'll be playing against 5 different opponents, each with their own game "strategy".
-With each opponent, you'll play anywhere between 3 to 7 rounds.
-(You won't know in advance when the last round is)
-Can you trust them? Or rather... can they trust <i>you?</i>
+<b>이제 진짜 실전입니다.</b>
+5명의 상대와 게임을 하게 될건데요, 각각의 상대는 저마다의 "전략"이 있습니다. 
+상대에 따라 총 라운드 수는 바뀌는데요, 최소 3 라운드, 최대 7 라운드라는 것만 알려드리겠습니다. 
+(미리 몇 라운드에서 끝나는 지는 알 수 없습니다.) 당신은 그들를 신뢰하겠습니까? 
+혹은... 그들이 <b>당신을</b> 신뢰할 수 있을까요?
 </p>
 
 <p id="iterated_intro_btm">
-Pick your first, <i>real</i> move. <b>Choose wisely.</b>
+이제 <i>진짜</i> 당신의 선택을 클릭하세요. <b>현명하게 판단하기 바랍니다.</b>
 </p>
 
 <p id="iterated_info_1">
-opponent: [X] of [Y]
+[Y] 번째 중 [X] 번째 상대
 </p>
 </p>
 <p id="iterated_info_2">
-your total score: 
+종합 점수: 
 </p>
 
 <p id="iterated_score_start">
-And your total score is...
+그래서 당신의 종합 점수는...
 </p>
 <p id="iterated_score_1">
 which is, wow, actually <i>impressively</i> bad.
@@ -251,47 +197,45 @@ which is <i>perfect!</i> Congrats you have too much time on your hands.
 ...i have no idea how you did that.
 </p>
 <p id="iterated_score_end">
-(the lowest &amp; highest possible scores are 7 and 49, respectively)
+(받을 수 있는 최저 점수는 7, 최고 점수는 49 였습니다.)
 </p>
 
 <p id="who_were">
-So who were these strange characters you just played against?
+방금 전까지 상대한 그 이상한 캐릭터들에 대해 알아볼까요?
 </p>
 
 <p id="character_tft">
-<b>COPYCAT:</b>
-Hello! I start with Cooperate, and afterwards, I just copy whatever you did in the last round. Meow
+<b>따라쟁이:</b>
+저는 협력으로 시작합니다.
+2라운드부터는 당신이 바로 전 라운드에서 선택한 걸 따라해요.
 </p>
 
 <p id="character_all_d">
-<b>ALWAYS CHEAT:</b>
-<i>the strong shall eat the weak</i>
+<b>항상배신자:</b>
+<i>전 늘 배신합니다.</i>
 </p>
 
 <p id="character_all_c">
-<b>ALWAYS COOPERATE:</b>
-Let's be best friends! &lt;3
+<b>항상협력자:</b>
+전 항상 협력합니다. &lt;3
 </p>
 
 <p id="character_grudge">
-<b>GRUDGER:</b>
-Listen, pardner. I'll start cooperatin', and keep cooperatin',
-but if y'all ever cheat me, I'LL CHEAT YOU BACK 'TIL THE END OF TARNATION.
+<b>원한을 가진 자:</b>
+나는 협력으로 시작해서 계속 당신과 협력합니다. '그런데' 만약 한번이라도 당신이 배반한다면 나계속 배반만 합니다 
 </p>
 
 <p id="character_prober">
-<b>DETECTIVE:</b>
-First: I analyze you. I start: Cooperate, Cheat, Cooperate, Cooperate.
-If you cheat back, I'll act like <span class="tft">Copycat</span>.
-If you never cheat back, I'll act like <span class="all_d">Always Cheat</span>, to exploit you.
-Elementary, my dear Watson.
+<b>탐정:</b>
+전 협력-배신-협력-협력으로 시작하는데, 그동안 당신이 배신을 했다면 이후에는 따라쟁이처럼 행동합니다. 
+한번도 배신을 하지 않았다면 항상배신자처럼 행동합니다.
 </p>
 
 <p id="characters_teaser">
-Now, what if these characters were to play...
+자, 만약 이 캐릭터들이 서로를 상대로 플레이한다면...
 </p>
 <p id="characters_button">
-...against each other? &rarr;
+...어떻게 될까요? &rarr;
 </p>
 
 
@@ -300,101 +244,98 @@ Now, what if these characters were to play...
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="place_your_bets">
-It's tournament time!
-Each character will now play against every other character:
-that's 10 paired matches, and 10 rounds per match.
+토너먼트 시간! 각 캐릭터는 다른 모든 캐릭터들을 상대로 게임을 할겁니다. 
+그럼 경기는 총 열 번이고, 한 경기는 10 라운드로 구성됩니다. 
 <br><br>
-Who do you think will get the highest <i>total</i> score?
-<b>Think carefully about it... and then
-PLACE YOUR BETS:</b>
+과연 이 중에서 누가 가장 높은 점수를 받게 될까요?
+<b>신중하게 생각하세요... 당신의 선택은?</b>
 </p>
 
 <p id="tournament_intro">
-Alright, you placed your bet on [CHAR]!
-Let's go through the matches one by one, and see how the tournament plays out...
+[CHAR]를 선택하셨네요!
+경기들을 하나하나 짚어가며 토너먼트가 어떻게 굴러가는지 봅시다.
 </p>
 
 <p id="first_match">
-first match &rarr;
+첫 번째 경기 &rarr;
 </p>
 
 <p id="next_match">
-next match &rarr;
+다음  &rarr;
 </p>
 
 <p id="match_header_1">
-<b>Match #[N]:</b> [A] vs [B]
+<b>[N] 번째 경기:</b> [A] vs [B]
 </p>
 <p id="match_header_2">
-<b>Rounds:</b>
+<b>라운드:</b>
 </p>
 <p id="match_header_3">
-<b>Total Scores:</b> [A] vs [B]
+<b>종합 점수:</b> [A] vs [B]
 </p>
 
 <p id="tournament_1">
-Oh, by the way...
+아, 그나저나 말이죠.
 </p>
 <p id="tournament_2">
-...You may be skeptical about that Christmas Truce story about the World War I trenches.
-Surely that was just a fluke?
+아까 1차 세계 대전 크리스마스 휴전 이야기 말이에요. 
+못 믿으셨을 수도 있는데... 정말 그게 단지 우연이었을까요?
 </p>
 <p id="tournament_3">
-Yes, the truce was dramatic, but it was <i>neither unique, nor unusual</i>.
+네, 휴전은 정말 극적이었죠. 그런데 그렇게 <i>드물거나 특별할 
+일도 아니었어요..</i>
 </p>
 <p id="tournament_4">
-Not <i>every</i> trench joined in the peace, but it was pretty widespread.
-Many front-lines came up with the idea independently, and again: <i>despite</i> specific, strict orders not to.
+모든 참호에서 휴전에 합류한 건 아니었지만 규모가 꽤 광범위했어요. 
+최전방의 많은 군인들이 이 생각을 처음 했었죠. 
+그리고 다시 말하지만 상부에서는 적과 긴장을 풀지 말라는 분명한 명령이 있었는데도 불구하고 이런 일이 있었던 거예요.
 </p>
 <p id="tournament_5">
-And in fact, even <i>before</i> Christmas, several front-lines already <i>had</i>
-established an unofficial, secret peace.
+사실 크리스마스 이전에도 몇몇 최전방에서는 이미 비공식적인 비밀 휴전을 합의했었답니다.
 </p>
 <p id="tournament_6">
-They called it: <b>the "live and let live" system.</b>
-Basically, you don't shoot me, I don't shoot you. And this worked, in a lot of places!
+"공존공영" 시스템 이라고 불렀어요. 쉽게 말하면 "나 쏘지마, 
+그럼 나도 너 안 쏠게." 같은 거죠. 이 생각이 다른 참호에서도 통한거에요, 엄청 많은 참호에서요.
 </p>
 <p id="tournament_7">
-You may still be skeptical. Most soldiers don't spontaneously form peace with the enemy.
-What's so special about <i>trench</i> warfare? 
+아직도 못 믿으시겠죠? 대부분 군인들은 적과 즉흥적으로 평화를 합의하지는 않아요.
+그런데 '참호' 전쟁에 특별한 점이 있어요.
 </p>
 <p id="tournament_8">
-Well, here's what's unique about the trenches:
-unlike almost every other form of war,
-you have to face the same <i>specific soldiers</i> every day.
+다른 형태의 전쟁과는 다르게,
+매일 똑같은, 특정 군인들과만 마주쳐야 한다는 거에요.
 </p>
 <p id="tournament_9">
-<b>It's a repeated game.</b> And that makes <i>all</i> the difference.
+<b>반복되는 게임인거죠.</b></br>이 반복성 때문에 이야기가 완전 달라져버리는 거에요.
 </p>
 <p id="tournament_10">
-Anyway. And the winner is...
+어쨌든. 승자는...!
 </p>
 
 <p id="the_winner_is">
-(drumroll please...) &rarr;
+(두구두구두구...) &rarr;
 </p>
 
 <p id="tournament_winner_1">
-<b class="tft">COPYCAT!</b>
+<b class="tft">따라쟁이가 이겼습니다!</b>
 </p>
 <p id="tournament_winner_2_yay">
-Congrats, you placed your bet on the right horse.
+축하합니다. 맞히셨네요.
 </p>
 <p id="tournament_winner_2_nay">
-(Apologies to your bet, [CHAR].)
+(선택하신 [CHAR]에 대해서 유감을 표합니다...)
 </p>
 <p id="tournament_winner_3">
-<span class="tft">Copycat</span> goes by many names.
-The Golden Rule, reciprocal altruism, tit for tat, or... <b>live and let live.</b>
-That's why "peace" could emerge in the trenches of World War I:
-when you're forced to play the same game with the
-same <i>specific people</i> (not just the same generic "enemy") over and over again --
-<span class="tft">Copycat</span> doesn't just win the battle, it wins the war.
+<span class="tft">따라쟁이</span>는 별명이 많습니다.
+황금률, 상호이타성, 가는 말이 고와야 오는 말이 곱다, 그리고 또... 공존공영. 
+바로 이게 1차세계대전의 참호들 틈에서 "평화"가 모습을 드러낼 수 있었던거에요. 
+똑같은 특정 사람들(그냥 일반적인 '적'이 아님)이랑 맨날맨날 게임을 해야된다면, 
+<span class="tft">따라쟁이</span>는 일개 전투 뿐만 아니라 전쟁의 최종 승리자가 된답니다. 
 <br><br>
-But if things change a lot when you play multiple rounds of the same game, what if we play...
+그런데 똑같은 게임을 몇 라운드 더 할 경우 상황이 바뀐다면...
 </p>
 <p id="tournament_teaser">
-...multiple <i>tournaments?</i> &rarr;
+...여러 번의 <i>토너먼트는?</i> &rarr;
 </p>
 
 
@@ -403,67 +344,66 @@ But if things change a lot when you play multiple rounds of the same game, what 
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="evolution_intro">
-Now, let's let our population of players <i>evolve over time</i>. It's a 3-step dance:
+이제 시간이 지남에 따라 플레이어들의 집합을 진화시켜보도록 합시다.
 </p>
 <p id="evolution_intro_1">
-<b>1. PLAY A TOURNAMENT</b><br>
-Let them all play against each other, and tally up their scores.
+<b>1. 토너먼트를 시행한다.</b><br>
+서로끼리 게임을 하게 시킵니다. 그 다음 각자의 총 점수를 계산합니다.
 </p>
 <p id="evolution_intro_2">
-<b>2. ELIMINATE LOSERS</b><br>
-Get rid of the 5 worst players. (if there's a tie, pick randomly between them)
+<b>2. 패자는 탈락시킨다.</b><br>
+제일 못한 5명을 탈락시킵니다. (동점자가 있으면 무작위로 탈락자 선택)
 </p>
 <p id="evolution_intro_3">
-<b>3. REPRODUCE WINNERS</b><br>
-Clone the 5 best players. (if there's a tie, pick randomly between them)
+<b>3. 승자는 재생산한다.</b><br>
+제일 잘한 5명을 복제합니다. (동점자가 있으면 무작위로 선택)
 </p>
 <p id="evolution_intro_footer">
-...and REPEAT, for as long as you'd like.
-Note: you don't have to wait for people to literally die &amp; reproduce for culture to evolve --
-all that's needed is that "unsuccessful" behaviors go away, and "successful" behaviors are imitated.
-So now...
+...그리고 계속 반복. 여러분이 원할 때 까지요.
+아 참, 문화가 진화하기 위해서는 사람들이 말그대로 죽고/재생산되기를 기다려야되는 것이 아닙니다. 
+"실패하는" 행동은 사라지고 "성공적인" 행동들이 모방된다는 것이 전부입니다. 그럼 이제...
 </p>
 <p id="evolution_intro_button">
-...let's see this in action. &rarr;
+...실제로 어떻게 되는지 봅시다. &rarr;
 </p>
 
 <p id="evo_1">
-Say we start with the following population of players:
-<span class="all_c">15 Always Cooperates</span>,
-<span class="all_d">5 Always Cheats</span>, and
-<span class="tft">5 Copycats</span>.
-(We'll ignore <span class="grudge">Grudger</span> &amp; <span class="prober">Detective</span> for now)
+처음 시작할 때는 다음과 같이 플레이어를 구성합니다.
+<span class="all_c">항상 협력자 15명</span>,
+<span class="all_d">항상배신자 5명</span>, and
+<span class="tft">따라쟁이 5명.</span>.
+<span class="grudge">원한을 가진 자</span> 하고 <span class="prober">탐정</span> 은 제외할께요.)
 <br><br>
-We're going to do the tournament-eliminate-reproduce dance a dozen times or so.
-Let's make another bet! Who do you think will win the <i>first</i> tournament?
-<b>PLACE YOUR BETS, AGAIN:</b>
+이제 토너먼트-패자 탈락-승자 복제의 3단계 댄스 과정을 십여 번 정도 반복할겁니다. 
+	다시 깜짝 퀴즈를 내볼게요. 누가 첫번째 토너먼트에서 이길 것 같나요?
+<b>알아맞혀 보세요.</b>
 </p>
 
 <p id="evo_2_all_c">
-Makes sense, <span class="all_c">Always Cooperate</span> outnumbers everyone else right now...
+말 되네요. 지금 <span class="all_c">항상 협력꾼</span> 의 수가 다른 캐릭터보다 많으니까요...
 </p>
 <p id="evo_2_all_d">
-Makes sense, <span class="all_d">Always Cheat</span> has a lot of <span class="all_c">Always Cooperates</span> to exploit...
+말 되네요. 항상 배신자가 사기치기 좋은 <span class="all_d">항상 협력꾼</span> 이 지금 엄청 많이 있으니까요... 
 </p>
 <p id="evo_2_tft">
-Makes sense, <span class="tft">Copycat</span> won the tournament last time, why not again?...
+말 되네요. <span class="tft">따라쟁이</span>가 저번 토너먼트에서 이겼으니까요. 다시 이기지 말라는 법 있어요?
 </p>
 <p id="evo_2">
-Let's see if you're correct:
+그럼 한번 정답이 맞는지 봅시다.
 </p>
 
 <p id="label_play_tournament">
-1) play tournament
+1) 토너먼트 시행
 </p>
 <p id="label_eliminate_bottom_5">
-2) eliminate bottom 5
+2) 하위 5명 탈락시키기
 </p>
 <p id="label_reproduce_top_5">
-3) reproduce top 5
+3) 상위 5명 재생산
 </p>
 
 <p id="evo_3_all_c">
-Alas, <span class="all_c">Always Cooperate</span> got eaten up by
+아이고. <span class="all_c">따라쟁이</span>는 이기지 못했습니다. 그래도 최소한 
 <span class="all_d">Always Cheat</span>, whose numbers have now increased by 5.
 </p>
 <p id="evo_3_all_d">
@@ -716,86 +656,78 @@ Tragic. But now, are there <i>other</i> types of players who can...
 </p>
 
 <p id="noise_characters">
-Let's meet some new faces! (or, new hats, anyway)
+새로운 캐릭터들을 만나봅시다.
 </p>
 
 <p id="character_tf2t">
-<b>COPYKITTEN:</b><br>
-Hello! I'm like <span class="tft">Copycat</span>,
-except I Cheat back only after you Cheat me twice in a row.
-After all, the first one could be a mistake! Purrrrr
+<b>아기 따라쟁이:</b><br>
+따라쟁이와 비슷하다. 처음에는 협력으로 시작했다가 상대가 두번 연속으로 배신하면 배신을 선택함.
 </p>
 
 <p id="character_pavlov">
-<b>SIMPLETON:</b><br>
-hi i try start cooperate.
-if you cooperate back, i do <i>same thing</i> as last move, even if it mistake.
-if you cheat back, i do <i>opposite thing</i> as last move, even if it mistake.
+<b>바보:</b><br>
+처음엔 협력으로 시작하고 상대가 협력을 하면 내가 둔 마지막 수와 같은 수를 둔다. 상대가 배신하면 내가 둔 마지막 수의 반대의 수를 둔다.
 </p>
 
 <p id="character_random">
-<b>RANDOM:</b><br>
-<i>Monkey robot! Ninja pizza tacos! lol i'm so random</i><br>
-(Just plays Cheat or Cooperate randomly with a 50/50 chance)
+<b>무작위:</b><br>
+그냥 임의적인 50대 50 확률로 배신하거나 협력 함.
 </p>
 
 <p id="noise_characters_end">
-Alright, let's see how well these peeps do when they...
+이 캐릭터들과 게임을 해봅시다.
 </p>
 <p id="noise_characters_btn">
-...play in a tournament &rarr;
+...토너먼트에서 게임을 한다. &rarr;
 </p>
 
 <p id="noise_evo_1">
-Let's start with a dozen
-<span class="all_c">Always Cooperates</span>,
-versus our old winner, the fair <span class="tft">Copycat</span>,
-and our three new characters:
-the forgiving <span class="tf2t">Copykitten</span>,
-the dull <span class="pavlov">Simpleton</span>, and
-the silly <span class="random">Random</span>.
+열 둘로 시작 해 봅시다
+<span class="all_c">항상 협력꾼</span> 
+대 우리의 지난 승자, <span class="tft">따라쟁이</span>,
+, 그리고 새로운 캐릭터인 관대한 <span class="tf2t">아기 따라쟁이</span>,
+<span class="pavlov">바보</span>, <span class="random">무작위</span>.
 <br><br>
-In each round of a match, players have a small chance of making a mistake. (let's say, 5%)
-Who do you think will come out on top?
-<b>Think carefully, then PLACE YOUR BETS:</b>
+매 회의 경기에서, 플레이어들은 작은 확률로 실수를 하게 됩니다. (5% 라고 해봅시다)
+누가 최고가 될 것이라고 생각하나요?
+<b>신중하게 생각하고, 맞춰 보세요:</b>
 </p>
 
 <p id="noise_evo_2">
-Alright, you bet [CHAR] wins. Let's find out!
-Use the controls to your left to <b>START</b> the sim in quick mode,
-or go through it <b>step-by-step</b>.
+[CHAR]이 이긴다에 거셨군요. 확인해 봅시다!
+당신의 왼쪽에 있는 버튼 중 <b>시작</b>을 눌러 빠르게 보거나,
+또는 <b>단계별</b>로 확인해보세요.
 </p>
 <p id="noise_evo_2_2_correct">
-You were correct -- 
+맞추셨군요! -- 
 </p>
 <p id="noise_evo_2_2_incorrect">
-Your bet was close, but no cigar -- 
+정답에 가까웠지만, 틀렸습니다 -- 
 </p>
 <p id="noise_evo_2_2">
-<span class="pavlov">Simpleton</span> wins!
-This is because <span class="pavlov">Simpleton</span> is actually capable of
-exploiting <span class="all_c">Always Cooperate</span>. They both start cooperating,
-but if <span class="pavlov">Simpleton</span> makes a mistake and cheats,
-since <span class="all_c">Always Cooperate</span> never retaliates,
-<i>it'll keep cheating them</i>.
+<span class="pavlov">바보</span>가 승리했습니다!
+이것은 사실 <span class="pavlov">바보</span>는 
+<span class="all_c">항상 협력꾼</span>을 착취할 능력이 있기 때문입니다. 
+둘 모두 협력으로 시작합니다, 하지만 만약 <span class="pavlov">바보</span>가 실수로 배신을 하면,
+<span class="all_c">항상 협력꾼</span>은 전대로 보복하지 않기에, 바보들은
+<i>항상 협력꾼들을 계속 배신할 것입니다.</i>.
 </p>
 <p id="noise_evo_2_2_btn">
-Now let's try...
+이제 해봅시다...
 </p>
 
 <p id="noise_evo_3">
-...the same thing as before, except instead of half-<span class="all_c">Always Cooperate</span>,
-it's half-<span class="all_d">Always Cheat</span>. It's a much <i>less</i> forgiving,
-<i>more</i> hostile environment.
+...전 시도에 했던 것처럼, 하지만 절반의 <span class="all_c">항상 협력꾼</span> 대신,
+더 빡센 환경을 만들기 위해 절반의<span class="all_d">항상 배신자</span>로 게임을 구성해보았습니다.
 <br><br>
-Who do you think will win now? <b>Think, then PLACE YOUR BETS:</b>
+누가 이길 거라고 생각합니까? <b>T생각 해 보고, 걸어 보세요:</b>
 </p>
 
 <p id="noise_evo_4">
-You bet on [CHAR]. Again, go through the simulation...
+당신은 [CHAR]에 걸었습니다. 다시, 시뮬레이션을 해보죠...
 </p>
 <p id="noise_evo_4_2_correct">
-You were right on the money -- 
+정답입니다 -- 이번엔 <span class="tf2t">아기 따라쟁이</span>가 이겼습니다!
 </p>
 <p id="noise_evo_4_2_incorrect">
 Good guess, but someone else took the prize -- 
@@ -971,44 +903,6 @@ Published in <i>The Illustrated London News</i>, January 9, 1915.
 </p>
 
 <!-- - - - - - - - - - - - - - - - - -->
-<!-- - - - - - CREDITS! - - - - - - -->
-<!-- - - - - - - - - - - - - - - - - -->
-
-<p id="credits">
-<span class="credits">
-
-created by:<br>
-<span class="big">NICKY CASE</span><br>
-<a href="http://ncase.me/" target="_blank">play my other shtuff</a>
-•
-<a href="https://twitter.com/ncasenmare" target="_blank">follow my tweeter</a>
-<br>
-<a href="https://github.com/ncase/trust/#play-it-here-httpncasemetrust" target="_blank">download the music &amp; source code</a>
-
-<span class="divider"></span>
-
-based off robert axelrod's 1984 book,<br>
-<span class="big">"THE EVOLUTION OF COOPERATION"</span><br>
-<a href="notes" target="_blank">read my footnotes for this game</a>
-
-<span class="divider"></span>
-
-lots of love and thanks to<br>
-<span class="big">MY PATREON SUPPORTERS</span><br>
-<a href="peeps" target="_blank">see my drawings of 'em</a>
-•
-<a href="https://www.patreon.com/ncase" target="_blank">throw coins at me on patreon &lt;3</a>
-
-<span class="divider"></span>
-
-p.s: want more learning-by-playing?<br>
-check out 
-<a href="http://explorabl.es/" target="_blank">explorable explanations</a>!
-
-</span>
-</p>
-
-<!-- - - - - - - - - - - - - - - - - -->
 <!-- - - - - THE PLAYERS - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - -->
 
@@ -1101,29 +995,29 @@ random
 </p>
 
 <p id="forgot_whos_who">
-(forgot who's who? hover buttons to see descriptions of each character!)
+(캐릭터들의 특성을 잊으셨나요? 각 캐릭터에 마우스를 올리시면 특성을 보실 수 있습니다.)
 </p>
 <p id="who_tft">
-Starts with Cooperate. Then, it simply repeats whatever YOU did in the last round.
+첫 번째 수는 협력으로 시작합니다. 그 다음엔 상대방이 바로 전 판에서 한 선택을 따라합니다.
 </p>
 <p id="who_all_d">
-Always cheats.
+항상 배신합니다.
 </p>
 <p id="who_all_c">
-Always cooperates.
+항상 협력합니다.
 </p>
 <p id="who_grudge">
-Starts with Cooperate, and keeps cooperating until you cheat it even once.
-Afterwards, it always plays Cheat.
+첫 번째 수는 협력으로 시작합니다. 
+바로 전 판에서 상대방이 협력했다면 자신의 마지막 수랑 같은 수를 둡니다. 
+하지만 바로 전 판에서 상대방이 배신을 했다면 자기의 마지막 수와 반대의 수를 둡니다.
 </p>
 <p id="who_prober">
 Starts with: Cooperate, Cheat, Cooperate, Cooperate.
 Afterwards, if you ever retaliate with a Cheat, it plays like a Copycat.
 Otherwise, it plays like an Always Cheat.
 </p>
-<p id="who_tf2t">
-Starts with Cooperate.
-Only retaliates with a Cheat if you cheated it TWICE in a row.
+<p id="who_tf2t"> 
+첫 번째 수는 협력으로 시작합니다. 상대방이 두번 연속으로 배신할 때만 배신으로 보복합니다.
 </p>
 <p id="who_pavlov">
 Starts with Cooperate.
@@ -1131,7 +1025,7 @@ Then, if you cooperated in last round, it repeats its last move (even if it was 
 But if you cheated in last round, it switches its last move (even if it was an accident).
 </p>
 <p id="who_random">
-Randomly cheats or cooperates with 50-50 chance
+무작위로 협력/배신을 결정합니다.(각각 50% 확률)
 </p>
 
 
@@ -1140,11 +1034,11 @@ Randomly cheats or cooperates with 50-50 chance
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="label_cooperate">
-cooperate
+협력
 </p>
 
 <p id="label_cheat">
-cheat
+배신
 </p>
 
 <p id="label_play">
@@ -1152,31 +1046,31 @@ play
 </p>
 
 <p id="label_start">
-START
+시작
 </p>
 
 <p id="label_stop">
-STOP
+정지
 </p>
 
 <p id="label_step">
-step
+단계별
 </p>
 
 <p id="label_reset">
-reset
+초기화
 </p>
 
 <p id="label_population">
-population
+사람수
 </p>
 
 <p id="label_payoffs">
-payoffs
+보상표
 </p>
 
 <p id="label_rules">
-rules
+규칙
 </p>
 
 <p id="label_next">
@@ -1193,32 +1087,28 @@ continue
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="chapter_intro">
-0. Introduction
+0. 소개
 </p>
 <p id="chapter_oneoff">
-1. One Game
+1. 단일게임
 </p>
 <p id="chapter_iterated">
-2. Repeated Game
-</p>
+2. 반복게임
 <p id="chapter_tournament">
-3. One Tournament
+3. 단일 토너먼트
 </p>
 <p id="chapter_evolution">
-4. Repeated Tournament
+4. 반복 토너먼트
 </p>
 <p id="chapter_distrust">
-5. The Evolution of Distrust
+5. 불신의 진화
 </p>
 <p id="chapter_noise">
-6. Making Mistaeks
+6. 실수를 할 경우
 </p>
 <p id="chapter_sandbox">
-7. Sandbox Mode
+7. 샌드박스 모드
 </p>
 <p id="chapter_conclusion">
-8. Conclusion
-</p>
-<p id="chapter_credits">
-9. Credits
+8. 결론
 </p>
