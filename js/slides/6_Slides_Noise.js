@@ -1,6 +1,6 @@
 // New characters
 SLIDES.push({
-
+        id: "noise",
 	onstart: function(self){
 
 		// WORDS
