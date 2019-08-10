@@ -49,52 +49,6 @@ SLIDES.push({
 			}
 		});
 
-		// Re-activate...
-		var _foreverWar = false;
-		var _foreverMove = "cheat";
-		listen(self, "iterated/round/end", function(){
-
-			if(_foreverWar){
-				publish("iterated/"+_foreverMove);
-				if(_foreverMove=="cheat") _foreverMove="cooperate";
-				else if(_foreverMove=="cooperate") _foreverMove="cheat";
-			}else{
-
-				STAGE_INDEX++;
-
-				// New words
-				o.topWords.setTextID("noise_"+(STAGE_INDEX+1));
-				o.btmWords.setTextID("noise_"+(STAGE_INDEX+1)+"_end");
-				_fadeIn(o.topWords, 100);
-				_fadeIn(o.btmWords, 300);
-
-				// Next stage
-				if(STAGE_INDEX>=STAGES.length){
-
-					publish("iterated/cooperate");
-					_foreverWar = true;
-					
-					// The FINAL buttons... remove the button & put it back in.
-					self.remove("button");
-					self.add({
-						id:"button", type:"Button",
-						x:304, y:463, text_id:"noise_5_btn", size:"long",
-						message: "slideshow/scratch"
-					});
-
-				}else{
-
-					// Reactivate buttons
-					var s = STAGES[STAGE_INDEX];
-					o.button.setText("label_"+s.button);
-					o.button.activate();
-
-				}
-
-			}
-
-		});
-
 	},
 	onend: function(self){
 		unlisten(self);
