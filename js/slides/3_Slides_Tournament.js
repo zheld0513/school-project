@@ -3,7 +3,7 @@ Loader.addToManifest(Loader.manifest,{
 	drumroll: "assets/sounds/drumroll.mp3"
 });
 
-// round-robin tournament, place your bets
+// round tournament
 SLIDES.push({
 	id: "tournament",
 	onstart: function(self){
